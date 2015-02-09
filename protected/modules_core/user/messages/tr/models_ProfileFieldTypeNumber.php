@@ -17,5 +17,7 @@
  * NOTE, this file must be saved in UTF-8 encoding.
  */
 return array (
-  'Number field options' => '',
+  'Maximum value' => 'Maksimum değer',
+  'Minimum value' => 'Minimum değer',
+  'Number field options' => 'Rakam alanı seçenekleri',
 );

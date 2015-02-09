@@ -17,20 +17,20 @@
  * NOTE, this file must be saved in UTF-8 encoding.
  */
 return array (
-  'Authentication mode' => '',
-  'Email' => '',
-  'Guid' => '',
   'ID' => '',
-  'Tags' => '',
+  'Username can contain only letters, numbers, spaces and special characters (+-._)' => '',
+  'Authentication mode' => 'Méthode d\'authentification',
   'Created At' => 'Créé à',
   'Created by' => 'Créé par',
+  'Email' => 'e-mail',
   'Group' => 'Groupe',
+  'Guid' => 'GUID',
   'Invalid language!' => 'Langue invalide !',
   'Language' => 'Langue',
   'New user needs approval' => 'Les nouveaux utilisateurs doivent être approuvés',
+  'Tags' => 'Mots-clés',
   'Updated at' => 'Mis à jour à',
   'Updated by' => 'Mis à jour par',
   'Username' => 'Nom d\'utilisateur',
-  'Username must consist of letters, numbers and spaces only' => 'Les noms d\'utilisateurs ne doivent contenir que des lettres, nombres et espaces.',
   'Wall' => 'Mur',
 );

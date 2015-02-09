@@ -17,5 +17,11 @@
  * NOTE, this file must be saved in UTF-8 encoding.
  */
 return array (
-  'Text Field Options' => '',
+  'Default value' => 'Varsayılan değer',
+  'Maximum length' => 'Maksimum uzunluk',
+  'Minimum length' => 'Minimum uzunluk',
+  'Regular Expression: Error message' => 'Düzenli İfade: Hata mesajı',
+  'Regular Expression: Validator' => 'Düzenli İfade: Doğrulayıcı',
+  'Text Field Options' => 'Yazı Alanı Seçenekleri',
+  'Validator' => 'Doğrulayıcı',
 );

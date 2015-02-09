@@ -1,5 +1,11 @@
 <?php
 return array (
+  'Birthday' => 'Aniversário',
+  'Custom' => 'Personalizar',
+  'Female' => 'Feminino',
+  'Gender' => 'Gênero',
+  'Hide year in profile' => 'Esconder idade no perfil',
+  'Male' => 'Masculino',
   'About' => 'Sobre',
   'City' => 'Cidade',
   'Country' => 'País',

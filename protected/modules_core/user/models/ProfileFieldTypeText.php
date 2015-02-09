@@ -80,9 +80,11 @@ class ProfileFieldTypeText extends ProfileFieldType {
                             'maxLength' => array(
                                 'type' => 'text',
                                 'maxlength' => 32,
+                                'label' => Yii::t('UserModule.models_ProfileFieldTypeText', 'Maximum length'),
                                 'class' => 'form-control',
                             ),
                             'validator' => array(
+                                'label' => Yii::t('UserModule.models_ProfileFieldTypeText', 'Validator'),
                                 'type' => 'dropdownlist',
                                 'class' => 'form-control',
                                 'items' => array(
@@ -92,22 +94,27 @@ class ProfileFieldTypeText extends ProfileFieldType {
                                 ),
                             ),
                             'minLength' => array(
+                                'label' => Yii::t('UserModule.models_ProfileFieldTypeText', 'Minimum length'),
                                 'type' => 'text',
                                 'class' => 'form-control',
                             ),
                             'maxLength' => array(
+                                'label' => Yii::t('UserModule.models_ProfileFieldTypeText', 'Maximum length'),
                                 'class' => 'form-control',
                                 'type' => 'text',
                             ),
                             'default' => array(
+                                'label' => Yii::t('UserModule.models_ProfileFieldTypeText', 'Default value'),
                                 'class' => 'form-control',
                                 'type' => 'text',
                             ),
                             'regexp' => array(
+                                'label' => Yii::t('UserModule.models_ProfileFieldTypeText', 'Regular Expression: Validator'),
                                 'class' => 'form-control',
                                 'type' => 'text',
                             ),
                             'regexpErrorMessage' => array(
+                                'label' => Yii::t('UserModule.models_ProfileFieldTypeText', 'Regular Expression: Error message'),
                                 'class' => 'form-control',
                                 'type' => 'text',
                             ),
@@ -173,7 +180,7 @@ class ProfileFieldTypeText extends ProfileFieldType {
         if (!$raw && $this->validator == self::VALIDATOR_EMAIL) {
             return HHtml::link($value, $value);
         } elseif (!$raw && $this->validator == self::VALIDATOR_URL) {
-            return HHtml::link($value, $value);
+            return HHtml::link($value, $value, array('target'=> '_blank'));
         }
 
         return $value;

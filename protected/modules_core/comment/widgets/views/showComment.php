@@ -26,7 +26,7 @@ $canDelete = $comment->canDelete();
                     <?php if ($canWrite): ?>
                         <li>
                             <?php
-                            echo HHtml::ajaxLink('<i class="fa fa-pencil"></i> Edit', Yii::app()->createAbsoluteUrl('//comment/comment/edit', array('id' => $comment->id)), array(
+                            echo HHtml::ajaxLink('<i class="fa fa-pencil"></i> '. Yii::t('CommentModule.widgets_views_showComment', 'Edit'), Yii::app()->createAbsoluteUrl('//comment/comment/edit', array('id' => $comment->id)), array(
                                 'success' => "js:function(html){ $('.preferences .dropdown').removeClass('open'); $('#comment_editarea_" . $comment->id . "').replaceWith(html); $('#comment_input_" . $comment->id . "_contenteditable').focus(); }"
                             ));
                             ?>
@@ -65,7 +65,7 @@ $canDelete = $comment->canDelete();
     </a>
 
     <div class="media-body">
-        <h4 class="media-heading"><a href="<?php echo $user->getProfileUrl(); ?>"><?php echo $user->displayName; ?></a>
+        <h4 class="media-heading"><a href="<?php echo $user->getProfileUrl(); ?>"><?php echo CHtml::encode($user->displayName); ?></a>
             <small><?php echo HHtml::timeago($comment->created_at); ?>
                 <?php if ($comment->created_at != $comment->updated_at): ?>
                     (<?php echo Yii::t('CommentModule.widgets_views_showComment', 'Updated :timeago', array(':timeago' => HHtml::timeago($comment->updated_at))); ?>)

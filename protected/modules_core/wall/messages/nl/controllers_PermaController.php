@@ -17,8 +17,7 @@
  * NOTE, this file must be saved in UTF-8 encoding.
  */
 return array (
-  'Could not find requested content!' => '',
   'Could not find requested permalink!' => '',
-  'Invalid content class!' => '',
-  'Unknown content class!' => '',
+  'Could not find requested content!' => 'Kon de gevraagde inhoud niet vinden',
+  'Unknown content class!' => 'Onbekende inhoud klasse',
 );
