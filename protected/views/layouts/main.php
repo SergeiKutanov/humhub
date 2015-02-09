@@ -21,6 +21,7 @@
     <link href="<?php echo Yii::app()->baseUrl; ?>/resources/font-awesome/css/font-awesome.min.css?ver=<?php echo $ver; ?>" rel="stylesheet">
     <link href="<?php echo Yii::app()->baseUrl; ?>/css/bootstrap-wysihtml5.css?ver=<?php echo $ver; ?>" rel="stylesheet">
     <link href="<?php echo Yii::app()->baseUrl; ?>/css/flatelements.css?ver=<?php echo $ver; ?>" rel="stylesheet">
+    <link href="<?php echo Yii::app()->baseUrl; ?>/css/custom.css" rel="stylesheet">
     <!-- end: CSS -->
 
 
@@ -90,7 +91,10 @@
         <div class="container">
             <div class="topbar-brand">
                 <a class="navbar-brand hidden-xs"
-                   href="<?php echo Yii::app()->createUrl('//'); ?>"><?php echo Yii::app()->name; ?></a>
+                   href="<?php echo Yii::app()->createUrl('//'); ?>">
+                    <!--<?php echo Yii::app()->name; ?>-->
+                    <img src="<?php echo Yii::app()->baseUrl;?>/img/logo.png" />
+                </a>
             </div>
 
             <div class="topbar-actions pull-right">
